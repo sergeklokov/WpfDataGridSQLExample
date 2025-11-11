@@ -13,11 +13,22 @@ Better restore it from backup:
 Or from SQL script, but where is the data?
 [https://github.com/Microsoft/sql-server-samples/releases](https://github.com/Microsoft/sql-server-samples/releases)
 
+Application will look like this:
+
+![App Screenshot](WpfDataGridSQLExample_Screenshot.png)
+
+It use data diagram:
+![EDMX Screenshot](EDMX_Screenshot.png)
+
+LINQ to SQL is visible in Debug mode:
+![Linq_SQL_in_debug_mode.png](Linq_SQL_in_debug_mode.png)
+
 Steps:
 1. Create WPF app.
 2. Restore database from backup.
 3. Install EntityFramework 6.5.1 (if you will do it todgether with creation Data Model EDMX, you may run into error.)
 5. Add ADO.NET Entity Data Model (EDMX), select Product and ProductCategory tables for it.
+
 
 
 # Errors I got while work on it:

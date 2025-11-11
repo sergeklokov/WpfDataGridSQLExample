@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data;
+using System.Data.Entity.Core.Objects;
 
 namespace WpfDataGridSQLExample
 {
@@ -23,6 +25,32 @@ namespace WpfDataGridSQLExample
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+            using (var dbContext = new AdventureWorks2022Entities())
+            {
+                //var products = dbContext.Products.ToList();
+
+
+                var query =
+                    from product in dbContext.Products
+                    where product.Color == "Red"
+                    orderby product.ListPrice
+                    select new { 
+                          product.Name
+                        , product.Color
+                        , SubCategoryName = product.ProductSubcategory.Name
+                        , CategoryName = product.ProductSubcategory.ProductCategory.Name
+                        , product.ListPrice };
+
+                dataGrid1.ItemsSource = query.ToList();
+            }
+
+
+
         }
     }
 }

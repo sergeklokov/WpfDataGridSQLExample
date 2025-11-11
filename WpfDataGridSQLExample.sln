@@ -1,13 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36414.22 d17.14
+VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDataGridSQLExample", "WpfDataGridSQLExample\WpfDataGridSQLExample.csproj", "{55F5BA45-5B62-4BD9-A7AA-CACF5252ABC7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
 	ProjectSection(SolutionItems) = preProject
+		EDMX_Screenshot.png = EDMX_Screenshot.png
+		Linq_SQL_in_debug_mode.png = Linq_SQL_in_debug_mode.png
 		ReadMe.md = ReadMe.md
+		WpfDataGridSQLExample_Screenshot.png = WpfDataGridSQLExample_Screenshot.png
 	EndProjectSection
 EndProject
 Global

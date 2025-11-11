@@ -102,6 +102,9 @@
     <Compile Include="ProductCategory.cs">
       <DependentUpon>AdventureWorksModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="ProductSubcategory.cs">
+      <DependentUpon>AdventureWorksModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
