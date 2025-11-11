@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.Entity.Core.Objects;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -12,8 +15,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Data;
-using System.Data.Entity.Core.Objects;
 
 namespace WpfDataGridSQLExample
 {
@@ -32,8 +33,8 @@ namespace WpfDataGridSQLExample
 
             using (var dbContext = new AdventureWorks2022Entities())
             {
-                //var products = dbContext.Products.ToList();
-
+                // it will use delegate to log SQL to Output/Debug window
+                dbContext.Database.Log = sql => System.Diagnostics.Debug.WriteLine(sql); 
 
                 var query =
                     from product in dbContext.Products

@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		EDMX_Screenshot.png = EDMX_Screenshot.png
 		Linq_SQL_in_debug_mode.png = Linq_SQL_in_debug_mode.png
 		ReadMe.md = ReadMe.md
+		Use_Database.Log_to_get_SQL.png = Use_Database.Log_to_get_SQL.png
 		WpfDataGridSQLExample_Screenshot.png = WpfDataGridSQLExample_Screenshot.png
 	EndProjectSection
 EndProject
